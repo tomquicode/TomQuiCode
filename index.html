@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">Logo </a>
+        <ul> 
+            <li><a href="#" class="actif">Accueil</a></li>
+            <li><a href="#">A propos</a></li>
+            <li><a href="#">Travaux</a></li>
+            <li><a href="#">Contact</a></li> 
+        </ul> 
+    </header>
+    <section>
+        <img src="Image/nuage.png" id="stars">
+        <img src="Image/moon.png" id="moon">
+        <img src="Image/montagne.png" id="mountains_behind">
+        <a href="#sec" id="btn"> Explore</a>
+        <img src="Image/montagne_devant.png" id="mountains_front">
+    </section>
+    <div class="sec" id="sec">
+        <h2>Premier projet semi-professionel</h2> <br> <br>
+        <p> Depuis ma formation à l'université Gustave Eiffel, j'ai commencé à explorer le monde de l'HTML et du CSS.
+            <br> Au départ, j'étais un peu intimidé par ces technologies, mais à mesure que je me suis immergé dans les
+            cours, <br> j'ai commencé à comprendre la puissance de ces outils pour la création de sites web. <br> <br> 
+
+            Les premières étapes de mon apprentissage ont été consacrées à comprendre les bases de l'HTML,<br> y compris les
+            éléments de base tels que les en-têtes, les paragraphes, les listes et les liens. <br> J'ai également appris
+            comment utiliser les balises HTML pour structurer les pages web et les rendre plus accessibles aux
+            utilisateurs et aux moteurs de recherche. <br> <br>
+
+            Ensuite, j'ai commencé à apprendre le CSS, qui m'a permis de donner une apparence visuellement attrayante à
+            mes pages HTML. <br> J'ai appris comment utiliser les feuilles de style pour définir des styles de mise en page,
+            de police et de couleur pour différents éléments de la page. <br> Cela m'a donné un contrôle beaucoup plus fin
+            sur l'apparence de mes sites web et m'a permis de les personnaliser pour les besoins spécifiques de chaque
+            projet.<br> <br> 
+
+            Au fil du temps, j'ai continué à développer mes compétences en HTML et CSS, en apprenant de nouvelles
+            techniques telles que la création de sites web réactifs et la conception de sites web adaptatifs.<br> J'ai
+            également commencé à explorer d'autres technologies liées au développement web, telles que JavaScript, pour
+            pouvoir ajouter une interactivité dynamique à mes sites web. <br> <br> 
+
+            En résumé, mon apprentissage de l'HTML et du CSS à l'université Gustave Eiffel est une expérience
+            enrichissante et passionnante. Je suis maintenant en mesure de créer des sites web de qualité grâce à ces compétences, et j'ai hâte de continuer à explorer de nouveaux horizons dans le
+            développement web.</p>
+    </div>
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let mountains_behind = document.getElementById('mountains_behind');
+        let btn = document.getElementById('btn');
+        let mountains_front = document.getElementById('mountains_front');
+        let header = document.querySelector('header')
+
+        window.addEventListener('scroll', function () {
+            let value = window.scrollY;
+            moon.style.top = value * 1.25 + 'px';
+            mountains_behind.style.top = value * 0.5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            header.style.top = value * 0.5 + 'px';
+            stars.style.top = value * 0.25 + 'px';
+        })
+    </script>
+</body>
+
+</html>
