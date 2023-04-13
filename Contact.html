@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style_contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">Ꮦ Ꮛ </a>
+        <ul>
+            <li><a href="index.html#sec" class="bouton1">Accueil</a></li>
+            <li><a href="A propos.html#sec" class="bouton2">A propos</a></li>
+            <li><a href="Travaux.html#sec" class="bouton3">Travaux</a></li>
+            <li><a href="#" class="bouton4" id="actif">Contact</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="Image/nuage.png" id="stars">
+        <img src="Image/moon.png" id="moon">
+        <img src="Image/montagne.png" id="mountains_behind">
+        <h2><a href="#sec" id="btn"> Cliquez-ici</a> </h2>
+        <img src="Image/montagne_devant.png" id="mountains_front">
+    </section>
+    <div class="sec" id="sec">
+        <div class="contact">
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20989.75412543958!2d2.5275365384877775!3d48.882628074538715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e61228a381c677%3A0x40b82c3688b3bc0!2s93220%20Gagny!5e0!3m2!1sfr!2sfr!4v1681290252890!5m2!1sfr!2sfr"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="form">
+                <h1>Me Contacter</h1>
+                <form action="https://formsubmit.co/tom.espeisses@gmail.com" method="POST">
+                    <input type="text" name="Nom" placeholder="Votre nom">
+                    <input type="email" name="E-mail" placeholder="Votre E-Mail">
+                    <textarea name="Message" placeholder="Votre Message"></textarea>
+                    <button type="submit">Envoyer</button>
+                    <input type="hidden" name="_template" value="table">
+                </form>
+            </div>
+        </div>
+
+
+        <div class="mes_infos"> 
+            <h1> Informations </h1> <hr class="trait"> 
+            <ul> 
+                <li>Prénom | Tom </li>
+                <li>Nom | Espeisses </li>
+                <li>Âge | 18 ans </li>
+                <li>N°Mobile | 06.80.92.46.14 </li>
+                <li>Commune | Gagny </li>
+                <li>Code Postale | 93220 </li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let mountains_behind = document.getElementById('mountains_behind');
+        let btn = document.getElementById('btn');
+        let mountains_front = document.getElementById('mountains_front');
+        let header = document.querySelector('header')
+
+        window.addEventListener('scroll', function () {
+            let value = window.scrollY;
+            moon.style.top = value * 1.25 + 'px';
+            mountains_behind.style.top = value * 0.5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            header.style.top = value * 0.5 + 'px';
+            stars.style.top = value * 0.25 + 'px';
+        })
+    </script>
+
+    <footer>
+        <ul class="social_icons">
+            <li> <a href="https://www.linkedin.com/in/tom-espeisses-054817271/" target="blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+            <li> <a href="https://www.youtube.com/channel/UCnTZFCNU_vyo9KySyDZip0Q" target="blank"><ion-icon name="logo-youtube"></ion-icon></a></li>
+            <li> <a href="https://www.instagram.com/tomm.esp/"><ion-icon name="logo-instagram" target="blank"></ion-icon></a></li>
+            <li> <a href="#"><ion-icon name="arrow-round-up"></ion-icon></a></li>
+        </ul>
+        <ul class="menu">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="A propos.html">A propos</a></li>
+            <li><a href="Travaux.html">Travaux</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="https://github.com" target="blank">Hébergeur</a></li>
+        </ul>
+        <p>@2023 Portfolio HTML5 | <a href="#">Tous droits réservés</a></p>
+
+    </footer>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</body>
+
+</html>
