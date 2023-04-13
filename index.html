@@ -7,50 +7,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <a href="#" class="logo">Logo </a>
-        <ul> 
-            <li><a href="#" class="actif">Accueil</a></li>
-            <li><a href="#">A propos</a></li>
-            <li><a href="#">Travaux</a></li>
-            <li><a href="#">Contact</a></li> 
-        </ul> 
+        <a href="#" class="logo">ᏖᏋ </a>
+        <ul>
+            <li><a href="#" class="bouton1" id="actif">Accueil</a></li>
+            <li><a href="A propos.html#sec" class="bouton2">A propos</a></li>
+            <li><a href="Travaux.html#sec" class="bouton3">Travaux</a></li>
+            <li><a href="Contact.html#sec" class="bouton4">Contact</a></li>
+        </ul>
     </header>
     <section>
         <img src="Image/nuage.png" id="stars">
         <img src="Image/moon.png" id="moon">
         <img src="Image/montagne.png" id="mountains_behind">
-        <a href="#sec" id="btn"> Explore</a>
+        <h2><a href="#sec" id="btn" data-text="Cliquez-ici..."> Cliquez-ici</a></h2>
         <img src="Image/montagne_devant.png" id="mountains_front">
     </section>
     <div class="sec" id="sec">
-        <h2>Premier projet semi-professionel</h2> <br> <br>
-        <p> Depuis ma formation à l'université Gustave Eiffel, j'ai commencé à explorer le monde de l'HTML et du CSS.
-            <br> Au départ, j'étais un peu intimidé par ces technologies, mais à mesure que je me suis immergé dans les
-            cours, <br> j'ai commencé à comprendre la puissance de ces outils pour la création de sites web. <br> <br> 
+        <div class="container">
+        <h3 class="bonjour">Bonjour et bienvenue sur mon portfolio ! </h3> <br> <br>
+        </div>
 
-            Les premières étapes de mon apprentissage ont été consacrées à comprendre les bases de l'HTML,<br> y compris les
-            éléments de base tels que les en-têtes, les paragraphes, les listes et les liens. <br> J'ai également appris
-            comment utiliser les balises HTML pour structurer les pages web et les rendre plus accessibles aux
-            utilisateurs et aux moteurs de recherche. <br> <br>
+        <div class="index_text"><p>
+            Je suis ravi de vous présenter mes projets récents, réalisés en utilisant <strong>HTML5 et CSS3 </strong>. <br>
+            En tant que <strong>développeur web passionné</strong>, je suis constamment en train d'explorer de nouvelles technologies et
+            d'affiner mes compétences pour créer des expériences web <strong>engageantes et innovantes.</strong><br>
+            Avec ce portfolio, je vous donne un <strong>aperçu de mon travail </strong> et de ma <strong>vision créative. </strong>
+            Chacun des projets présentés ici a été créé avec soin pour offrir une expérience utilisateur agréable et
+            intuitive. <br>
+            Vous pourrez voir comment j'ai utilisé les <strong>dernières techniques de développement web</strong> pour créer des sites
+            web modernes, dynamiques et esthétiquement
+            plaisants. <br> <br>
 
-            Ensuite, j'ai commencé à apprendre le CSS, qui m'a permis de donner une apparence visuellement attrayante à
-            mes pages HTML. <br> J'ai appris comment utiliser les feuilles de style pour définir des styles de mise en page,
-            de police et de couleur pour différents éléments de la page. <br> Cela m'a donné un contrôle beaucoup plus fin
-            sur l'apparence de mes sites web et m'a permis de les personnaliser pour les besoins spécifiques de chaque
-            projet.<br> <br> 
+            De plus, je suis convaincu que <strong>l'interaction et la collaboration</strong> avec mes amis-es sont essentielles pour
+            atteindre les résultats souhaités. C'est pourquoi je suis toujours à leur écoute pour m'assurer
+            que leurs attentes soit satisfaites. <br>
 
-            Au fil du temps, j'ai continué à développer mes compétences en HTML et CSS, en apprenant de nouvelles
-            techniques telles que la création de sites web réactifs et la conception de sites web adaptatifs.<br> J'ai
-            également commencé à explorer d'autres technologies liées au développement web, telles que JavaScript, pour
-            pouvoir ajouter une interactivité dynamique à mes sites web. <br> <br> 
+            Je vous invite donc à parcourir <strong>mes projets </strong>pour découvrir mon style de design, ma capacité à <strong>résoudre les
+            problèmes </strong> à répondre aux besoins des clients. N'hésitez pas à <strong>me contacter</strong> si vous avez des questions ou
+            des commentaires. Je serai ravi de discuter avec vous de vos projets et de vous aider à les concrétiser.
+            <br> <br> 
 
-            En résumé, mon apprentissage de l'HTML et du CSS à l'université Gustave Eiffel est une expérience
-            enrichissante et passionnante. Je suis maintenant en mesure de créer des sites web de qualité grâce à ces compétences, et j'ai hâte de continuer à explorer de nouveaux horizons dans le
-            développement web.</p>
+            Merci de votre visite et j'espère que vous apprécierez mon travail !
+        </p></div>
     </div>
     <script>
         let stars = document.getElementById('stars');
@@ -69,6 +72,24 @@
             stars.style.top = value * 0.25 + 'px';
         })
     </script>
+
+    <footer>
+        <ul class="social_icons">
+            <li> <a href="https://www.linkedin.com/in/tom-espeisses-054817271/" target="blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+            <li> <a href="https://www.youtube.com/channel/UCnTZFCNU_vyo9KySyDZip0Q" target="blank"><ion-icon name="logo-youtube"></ion-icon></a></li>
+            <li> <a href="https://www.instagram.com/tomm.esp/" target="blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
+            <li> <a href="#"><ion-icon name="arrow-round-up"></ion-icon></a></li>
+        </ul>
+        <ul class="menu">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="A propos.html">A propos</a></li>
+            <li><a href="Travaux.html">Travaux</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="https://github.com" target="blank">Hébergeur</a></li>
+        </ul>
+        <p>@2023 Portfolio HTML5 | <a href="#">Tous droits réservés</a></p>
+    </footer>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </body>
 
 </html>
