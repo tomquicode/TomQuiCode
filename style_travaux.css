@@ -1,3 +1,4 @@
 .sec {
+    flex-direction: row;
     display: flex;
 }
