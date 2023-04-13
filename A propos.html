@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A propos</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">Ꮦ Ꮛ </a>
+        <ul>
+            <li><a href="index.html#sec" class="bouton1">Accueil</a></li>
+            <li><a href="#" class="bouton2" id="actif">A propos</a></li>
+            <li><a href="Travaux.html#sec" class="bouton3">Travaux</a></li>
+            <li><a href="Contact.html#sec" class="bouton4">Contact</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="Image/nuage.png" id="stars">
+        <img src="Image/moon.png" id="moon">
+        <img src="Image/montagne.png" id="mountains_behind">
+        <h2> <a href="#sec" id="btn"> Cliquez-ici</a> </h2>
+        <img src="Image/montagne_devant.png" id="mountains_front">
+    </section>
+    <div class="sec" id="sec">
+        <div class="container">
+            <h3 class="bonjour2">A propos de moi !</h3> <br> <br> <br> <br> <br> <br> <br>
+        </div>
+        <div class="texte-colonnes">
+            <div class="colonne">
+                <p><i>Je m'appelle Tom</i> et j'ai <strong>18 ans.</strong> Je réside à <strong>Gagny,</strong> <i>une
+                        commune située dans le département de la
+                        Seine-Saint-Denis en
+                        France.</i>
+                    Je suis <strong>passionné par le développement de sites web,</strong> ainsi que par les jeux vidéo.
+                    J'aime créer des
+                    projets en ligne et <strong>m'investir pleinement</strong> pour les réaliser avec succès. </p>
+            </div>
+            <div class="colonne">
+                <p>Je suis actuellement <strong>étudiant à l'université Gustave Eiffel</strong>, où je poursuis un <strong>Diplôme d'Université</strong>
+                    en <strong>Développement Web.</strong> Avant cela, j'ai fréquenté le <strong>lycée Gustave Eiffel,</strong> où j'ai suivi les
+                    spécialités <strong>NSI</strong> <i>(Numérique et Sciences Informatiques)</i> et <strong>SI</strong> <i>(Sciences de l'Ingénieur).</i> J'ai obtenu
+                    mon <strong>Baccalauréat avec la mention assez bien,</strong> <i>mettant en valeur mon engagement et ma détermination
+                    dans mes études.</i> Au cours de mon parcours scolaire, j'ai développé une passion pour le développement
+                    web et j'ai acquis des <strong>compétences solides dans la création de sites web interactifs et
+                    fonctionnels.</strong> <i>Je suis enthousiaste à l'idée de continuer à développer mes connaissances et mes
+                    compétences dans le domaine du développement web à l'université Gustave Eiffel,</i> et de mettre en
+                    pratique mes acquis pour réaliser des <strong>projets passionnants et innovants.</strong></p>
+            </div>
+            <div class="colonne">
+                <p>J'aspire à <strong>poursuivre mes études dans le domaine de l'informatique</strong> pour acquérir les connaissances et
+                    les compétences nécessaires pour accomplir mon <strong>projet professionnel,</strong> qui est de travailler dans la
+                    <strong>cybersécurité militaire.</strong> <i>Je suis convaincu que la combinaison de ma passion pour la technologie et
+                    mon désir de contribuer à la sécurité de notre société me permettra de réaliser mes objectifs. J'ai
+                    hâte d'apprendre davantage sur les techniques de sécurité informatique, les défis de la
+                    cybersécurité et les meilleures pratiques pour protéger les systèmes informatiques contre les
+                    menaces potentielles.</p></i>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let mountains_behind = document.getElementById('mountains_behind');
+        let btn = document.getElementById('btn');
+        let mountains_front = document.getElementById('mountains_front');
+        let header = document.querySelector('header')
+
+        window.addEventListener('scroll', function () {
+            let value = window.scrollY;
+            moon.style.top = value * 1.25 + 'px';
+            mountains_behind.style.top = value * 0.5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            header.style.top = value * 0.5 + 'px';
+            stars.style.top = value * 0.25 + 'px';
+        })
+    </script>
+
+    <footer>
+        <ul class="social_icons">
+            <li> <a href="https://www.linkedin.com/in/tom-espeisses-054817271/" target="blank"><ion-icon
+                        name="logo-linkedin"></ion-icon></a></li>
+            <li> <a href="https://www.youtube.com/channel/UCnTZFCNU_vyo9KySyDZip0Q" target="blank"><ion-icon
+                        name="logo-youtube"></ion-icon></a></li>
+            <li> <a href="https://www.instagram.com/tomm.esp/"><ion-icon name="logo-instagram"
+                        target="blank"></ion-icon></a></li>
+            <li> <a href="#"><ion-icon name="arrow-round-up"></ion-icon></a></li>
+        </ul>
+        <ul class="menu">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="A propos.html">A propos</a></li>
+            <li><a href="Travaux.html">Travaux</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="https://github.com" target="blank">Hébergeur</a></li>
+        </ul>
+        <p>@2023 Portfolio HTML5 | <a href="#">Tous droits réservés</a></p>
+
+    </footer>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</body>
+
+</html>
