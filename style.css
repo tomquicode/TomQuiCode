@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
 }
 
@@ -23,6 +22,7 @@ header {
     justify-content: space-between;
     align-items: center;
     z-index: 10000;
+    font-family: 'Poppins', sans-serif;
 }
 
 header .logo {
@@ -32,8 +32,9 @@ header .logo {
     font-size: 2em;
     text-transform: uppercase;
     letter-spacing: 2px;
-
 }
+
+
 
 header ul {
     display: flex;
@@ -52,10 +53,29 @@ header ul li a {
     color: white;
     border-radius: 20px;
     font-weight: bolder;
+    transition: all 0.2s ease;
 }
 
-header ul li a:hover,
-header ul li a.actif {
+.bouton1:hover,
+#actif.bouton1 {
+    background: white;
+    color: #2b1055;
+}
+
+.bouton2:hover,
+#actif.bouton2 {
+    background: white;
+    color: #2b1055;
+}
+
+.bouton3:hover,
+#actif.bouton3 {
+    background: white;
+    color: #2b1055;
+}
+
+.bouton4:hover,
+#actif.bouton4 {
     background: white;
     color: #2b1055;
 }
@@ -69,6 +89,16 @@ section {
     justify-content: center;
     align-items: center;
     overflow: hidden;
+}
+
+section::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #81b1e3, transparent);
+    z-index: 10000;
 }
 
 
@@ -101,24 +131,311 @@ section img#mountains_front {
     border-radius: 40px;
     background: white;
     color: #2b1055;
-    font-size: 1.5em;
     transform: translateY(100px);
 }
+
+h2 {
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+}
+
 
 .sec {
     position: relative;
     padding: 100px;
-    background: linear-gradient(#83B3E3, #4776db);
+    background: linear-gradient(#83B3E3, transparent);
+    text-align: center;
 }
 
-.sec h2 {
+.sec h3 {
     font-size: 3.5em;
     margin-top: 100px;
     color: white;
+    font-family: 'Poppins', sans-serif;
 }
 
 .sec p {
     font-size: 1.5em;
-    color: white;
+    color: black;
     margin-right: 45px;
 }
+
+footer {
+    position: relative;
+    width: 100%;
+    background: white, transparent;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+footer .social_icons,
+footer .menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+footer .social_icons li,
+footer .menu li {
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+footer .social_icons li a {
+    font-size: 2em;
+    color: black;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    font-family: 'Poppins', sans-serif;
+}
+
+footer .social_icons li a:hover {
+    transform: translateY(-10px);
+}
+
+footer .menu li a {
+    font-size: 1.2em;
+    color: black;
+    margin: 0 10px;
+    display: inline-block;
+    text-decoration: none;
+    opacity: 0.65;
+    font-family: 'Poppins', sans-serif;
+}
+
+footer .menu li a:hover {
+    opacity: 1;
+}
+
+footer p {
+    color: black;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    font-family: 'Poppins', sans-serif;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+    opacity: 0.65;
+    font-family: 'Poppins', sans-serif;
+}
+
+footer a:hover {
+    opacity: 1;
+}
+
+
+.container {
+    display: inline-block;
+    text-align: center;
+}
+
+.bonjour {
+    border-right: 5px solid;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 3s, cursor .4s step-end infinite alternate;
+    text-align: center;
+}
+
+@keyframes cursor {
+    50% {
+        border-color: transparent
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+.index_text {
+    background: transparent;
+    border-radius: 15px;
+    padding: 15pt;
+    font-family: Montserrat;
+}
+
+
+.contact {
+    height: 50vh;
+    width: 50vw;
+    box-shadow: 0 .2rem .5rem transparent;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+.map,
+.form {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+.form {
+    position: relative;
+    background-color: #18394e;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1.2rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.form h1 {
+    color: white;
+    font: 500 1.8rem sans-serif;
+    padding: 0.2rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.form h1:hover {
+    font-weight: bolder;
+}
+
+.form form {
+    padding: 0.2rem;
+}
+
+.form textarea {
+    height: 6rem;
+    resize: none;
+}
+
+.form input,
+.form textarea {
+    width: 100%;
+    padding: 1rem;
+    border: .08rem solid rgb(255, 255, 255);
+    border-radius: 2rem;
+    background-color: unset;
+    color: white;
+    font-size: 1rem;
+}
+
+.form input:not(:first-child),
+.form textarea,
+.form button {
+    margin-top: .8rem;
+}
+
+.form button {
+    background-color: #18394e;
+    padding: 1rem 2rem;
+    color: white;
+    border-radius: 1.2rem;
+    border: .08rem solid white;
+}
+
+.form button:hover {
+    background-color: white;
+    color: #53599f;
+}
+
+.form button:active {
+    font-weight: bolder;
+}
+
+.form textarea,
+input:focus {
+    outline: none;
+}
+
+.mes_infos {
+    background-color: #18394e;
+    width: 400px;
+    height: 50vh;
+    font-size: 1.2em;
+    color: white;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 1.2rem;
+}
+
+.mes_infos ul {
+    list-style: none;
+}
+
+.mes_infos ul li {
+    font-family: Montserrat;
+    margin-top: 35px;
+}
+
+.mes_infos h1 {
+    font-family: 'Poppins', sans-serif;
+    font: 500 1.8rem sans-serif;
+    padding-top: 1.2rem;
+    padding-bottom: 1rem;
+}
+
+.trait {
+    border: 0.15rem solid white;
+}
+
+.bonjour2 {
+    border-right: 5px solid;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 3s, cursor .4s step-end infinite alternate;
+    text-align: center;
+}
+
+@keyframes cursor {
+    50% {
+        border-color: transparent
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+.texte-colonnes {
+    display: flex;
+}
+
+.colonne {
+    flex: 1;
+    border-right: 1px solid #000000;
+    /* Ligne de séparation entre les colonnes */
+    padding:0 10px;
+    /* Espacement intérieur des colonnes */
+}
+
+.colonne:last-child {
+    border-right: none;
+    /* Supprimer la ligne de séparation à droite de la dernière colonne */
+}
+
+.colonne p {
+    padding-left: 30px;
+    font-family: Montserrat;
+    font-size: 15pt;
+}
+
