@@ -439,3 +439,59 @@ input:focus {
     font-size: 15pt;
 }
 
+.galerie-item {
+    align-items: center;
+    text-align: center;
+    margin-top: 15px;
+}
+.galerie-item img{
+    width: 500px;
+}
+
+.galerie-item video {
+    width: 25%;
+}
+
+.galerie-item p {
+    font-family: Montserrat;
+    align-items: center;
+    text-align: center;
+    padding: 25px; 
+    justify-content: center;
+}
+
+.images-scroll {
+    display: flex;
+    width: 640px;
+    height: auto;
+    overflow: hidden;  
+    margin-left: 510px;
+}
+
+.images-scroll img{
+   width: 640px;
+   height: 350px;
+}
+.pic {
+    animation-duration: 10s;
+    animation-name: mesImages; 
+    animation-iteration-count: infinite;
+}
+
+@keyframes mesImages {
+    0% {
+        transform: translateX(10px);
+    }
+    25% {
+        transform: translateX(-640px);
+    }
+    50% {
+        transform: translateX(-1280px);
+    }
+    75% {
+        transform: translateX(-1920px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
