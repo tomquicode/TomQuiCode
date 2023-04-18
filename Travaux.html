@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travaux</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style_travaux.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">Ꮦ Ꮛ </a>
+        <ul>
+            <li><a href="index.html#sec" class="bouton1">Accueil</a></li>
+            <li><a href="A propos.html#sec" class="bouton2">A propos</a></li>
+            <li><a href="#" class="bouton3" id="actif">Travaux</a></li>
+            <li><a href="Contact.html#sec" class="bouton4">Contact</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="Image/nuage.png" id="stars">
+        <img src="Image/moon.png" id="moon">
+        <img src="Image/montagne.png" id="mountains_behind">
+        <h2><a href="#sec" id="btn"> Cliquez-ici</a> </h2>
+        <img src="Image/montagne_devant.png" id="mountains_front">
+    </section>
+    <div class="sec" id="sec">
+        <div class="galerie">
+            <div class="galerie-item">
+                <p>J'ai réalisé ce logo dans le cadre d'un projet personnel <br> 
+                 concernant ma chaine Twitch, site de diffusion de flux vidéo live. <br>
+                 Cette bannière me sers à rediriger les spectateurs sur mon serveur discord communautaire.<br> <br>
+                Réalisé avec Photoshop, le 02/10/2021 <br> <br> <ion-icon name="arrow-round-down"></ion-icon></p>
+                <img src="Image/discord.png" alt="Image 1">
+            </div>
+            <div class="galerie-item">
+                <p>J'ai réalisé ce logo dans le cadre d'un projet personnel <br> 
+                    concernant ma chaine Twitch, site de diffusion de flux vidéo live. <br>
+                    Cette bannière me sers à rediriger les spectateurs sur mon Paypal personnel, <br> si toutefois quelqu'un voudrait envoyer un don !<br> <br>
+                   Réalisé avec Photoshop, le 03/10/2021 <br> <br> <ion-icon name="arrow-round-down"></ion-icon></p>
+                <img src="Image/tips.png" alt="Image 2">
+            </div>
+            <div class="galerie-item">
+                <div class="galerie-item">
+                    <p>J'ai réalisé ce montage vidéo dans le cadre d'un projet personnel <br> 
+                        concernant ma chaine Youtube, site de diffusion de flux vidéo. <br>
+                        Cette vidéo est un trailer d'un montage plus long, <br> que je compte mettre en ligne prochainement sur ma chaine personnel "Tom Espeisses".<br> <br>
+                       Réalisé avec Adobe Premiere Pro, le 08/04/2021 <br> <br> <ion-icon name="arrow-round-down"></ion-icon></p>
+                    <video src="Image/teaser.mp4" controls></video>
+                </div>
+            </div>
+            <div class="galerie-item">
+                <p>J'ai réalisé ce montage vidéo dans le cadre d'un projet personnel. <br> 
+                    Cette vidéo est un "AMV" (anime music video, est une œuvre vidéo réalisée à partir d'extraits d'anime)  <br> que j'ai fait à titre strictement personnel et qui n'est pas déstiné à être publié.<br> <br>
+                   Réalisé avec Adobe Premiere Pro et Adobe After Effect, le 17/11/2022 <br> <br> <ion-icon name="arrow-round-down"></ion-icon></p>
+                <video src="Image/amv1.mp4" controls></video>
+            </div>
+            <div class="galerie-item">
+                <p>J'ai réalisé ce montage vidéo dans le cadre d'un projet personnel. <br> 
+                    Cette vidéo est un "AMV" (anime music video, est une œuvre vidéo réalisée à partir d'extraits d'anime)  <br> que j'ai fait à titre strictement personnel et qui n'est pas déstiné à être publié.<br> <br>
+                   Réalisé avec Adobe Premiere Pro et Adobe After Effect, le 27/03/2023 <br> <br> <ion-icon name="arrow-round-down"></ion-icon></p>
+                <video src="Image/amv2.mp4" controls></video>
+            </div>
+            <div class="galerie-item">
+                <p>J'ai réalisé ce site internet dans le cadre scolaire. <br> 
+                    Ce projet est mon tout premier site en incluant du CSS, il représente mes premiers pas dans le monde du développment Web.<br> <br>
+                   Réalisé avec Visual Studio Code, le 15/12/2022 <br> <br> <ion-icon name="arrow-round-down"></ion-icon></p>
+                <div class="images-scroll">
+                    <img class="pic" src="Image/accueil.png">
+                    <img class="pic" src="Image/cv.png">
+                    <img class="pic" src="Image/inscription.png">
+                    <img class="pic" src="Image/mentions.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let mountains_behind = document.getElementById('mountains_behind');
+        let btn = document.getElementById('btn');
+        let mountains_front = document.getElementById('mountains_front');
+        let header = document.querySelector('header')
+
+        window.addEventListener('scroll', function () {
+            let value = window.scrollY;
+            moon.style.top = value * 1.25 + 'px';
+            mountains_behind.style.top = value * 0.5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            header.style.top = value * 0.5 + 'px';
+            stars.style.top = value * 0.25 + 'px';
+        })
+    </script>
+
+    <footer>
+        <ul class="social_icons">
+            <li> <a href="https://www.linkedin.com/in/tom-espeisses-054817271/" target="blank"><ion-icon
+                        name="logo-linkedin"></ion-icon></a></li>
+            <li> <a href="https://www.youtube.com/channel/UCnTZFCNU_vyo9KySyDZip0Q" target="blank"><ion-icon
+                        name="logo-youtube"></ion-icon></a></li>
+            <li> <a href="https://www.instagram.com/tomm.esp/"><ion-icon name="logo-instagram"
+                        target="blank"></ion-icon></a></li>
+            <li> <a href="#"><ion-icon name="arrow-round-up"></ion-icon></a></li>
+        </ul>
+        <ul class="menu">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="A propos.html">A propos</a></li>
+            <li><a href="Travaux.html">Travaux</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="https://github.com" target="blank">Hébergeur</a></li>
+        </ul>
+        <p>@2023 Portfolio HTML5 | <a href="#">Tous droits réservés</a></p>
+
+    </footer>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</body>
+
+</html>
